@@ -23,8 +23,20 @@
             </nav>
             <div class="container-div">
                 <ul class="list-adress">
-                    <li><a href="mailto:info@devstudio.com" class="mail box">info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111" class="tel box">+38 096 111 11 11</a></li>
+                    <li class="adressli">
+                        <a href="mailto:info@devstudio.com" class="mail box">
+                            <svg class="icon-mail" width="16px" height="12px">
+                               <use class="use-mail" href="./imeges/hw-04/icons.svg#envelope1"></use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+                    <li class="adressli">
+                        <a href="tel:+380961111111" class="tel box">
+                            <svg class="icon-tel" width="10px" height="16px">
+                               <use href="./imeges/hw-04/icons.svg#smartphone2"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                    </li>
                 </ul>
             </div>
        </div>
@@ -41,26 +53,22 @@
         <section class="description">
             <div class="container">
                 <ul class="lists-a">
-                    <li class="box">
-                        <img src="" alt="">
+                    <li class="box plate">
                         <h3 class="title-attention">Внимание к деталям</h3>
                         <p class="paragraph-ideological">Идейные соображения, а также начало повседневной работы по формированию
                             позиции.</p>
                     </li>
-                    <li class="box">
-                        <img src="" alt="">
+                    <li class="box clock">
                         <h3 class="title-punctuality">Пунктуальность</h3>
                         <p class="paragraph-a-task">Задача организации, в особенности же рамки и место обучения кадров влечет за
                             собой.</p>
                     </li>
-                    <li class="box">
-                        <img src="" alt="">
+                    <li class="box diagram">
                         <h3 class="title-planning">Планирование</h3>
                         <p class="paragraph-equal">Равным образом консультация с широким активом в значительной степени
                             обуславливает.</p>
                     </li>
-                    <li class="box">
-                        <img src="" alt="">
+                    <li class="box astronaut">
                         <h3 class="title-modern">Современные технологии</h3>
                         <p class="paragraph-significance">Значимость этих проблем настолько очевидна, что реализация плановых
                             заданий.</p>
@@ -89,57 +97,268 @@
                         <div class="employee-and-position">
                             <h3 class="name">Игорь Демьяненко</h3>
                             <p class="position">Product Designer</p>
-                            <!-- <ul class="network">
-                                <li></li>
-                                <li></li>
-                            </ul> -->
+                            <div class="div-network">
+                                <ul class="network box">
+                                    <li class="network-employee">
+                                        <a class="instagram" href="" target="_blank" rel="noopener noreffer" aria-label="Instagram-icon">
+                                        <svg class="svg-instagram" width="20px" height="20px">
+                                            <use href="./imeges/hw-04/icons.svg#instagram1"></use>
+                                        </svg>
+                                        </a>
+                                    </li>
+                                    <li class="network-employee">
+                                        <a class="twitter" href="">
+                                        <svg class="svg-twitter" width="20px" height="20px">
+                                            <use href="./imeges/hw-04/icons.svg#twitter2"></use>
+                                        </svg>
+                                        </a>
+                                    </li>
+                                    <li class="network-employee">
+                                        <a class="facebook" href="">
+                                        <svg class="svg-facebook" width="20px" height="20px">
+                                            <use href="./imeges/hw-04/icons.svg#facebook3"></use>
+                                        </svg>
+                                        </a>
+                                    </li>
+                                    <li class="network-employee">
+                                        <a class="linkedin" href="">
+                                        <svg class="svg-linkedin" width="20px" height="20px">
+                                            <use href="./imeges/hw-04/icons.svg#linkedin4"></use>
+                                        </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div> 
                     </li>
                     <li class="olga box"><img src="./imeges/Наша-команда/img-2.jpg" alt="img-2.jpg" width="270" height="260">
                         <div class="employee-and-position">
                             <h3 class="name">Ольга Репина</h3>
                             <p class="position">Frontend Developer</p>
-                            <!-- <ul class="network">
-                                <li></li>
-                                <li></li>
-                            </ul> -->
+                            <div class="div-network">
+                                <ul class="network box">
+                                    <li class="network-employee">
+                                        <a class="instagram" href="">
+                                            <svg class="svg-instagram" width="20px" height="20px">
+                                                <use href="./imeges/hw-04/icons.svg#instagram1"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="network-employee">
+                                        <a class="twitter" href="">
+                                            <svg class="svg-twitter" width="20px" height="20px">
+                                                <use href="./imeges/hw-04/icons.svg#twitter2"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="network-employee">
+                                        <a class="facebook" href="">
+                                            <svg class="svg-facebook" width="20px" height="20px">
+                                                <use href="./imeges/hw-04/icons.svg#facebook3"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="network-employee">
+                                        <a class="linkedin" href="">
+                                            <svg class="svg-linkedin" width="20px" height="20px">
+                                                <use href="./imeges/hw-04/icons.svg#linkedin4"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li class="nicholas box"><img src="./imeges/Наша-команда/img-3.jpg" alt="img-3.jpg" width="270" height="260">
                         <div class="employee-and-position">
                             <h3 class="name">Николай Тарасов</h3>
                             <p class="position">Marketing</p>
-                            <!-- <ul class="network">
-                                <li></li>
-                                <li></li>
-                            </ul> -->
+                            <div class="div-network">
+                                <ul class="network box">
+                                    <li class="network-employee">
+                                        <a class="instagram" href="">
+                                            <svg class="svg-instagram" width="20px" height="20px">
+                                                <use href="./imeges/hw-04/icons.svg#instagram1"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="network-employee">
+                                        <a class="twitter" href="">
+                                            <svg class="svg-twitter" width="20px" height="20px">
+                                                <use href="./imeges/hw-04/icons.svg#twitter2"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="network-employee">
+                                        <a class="facebook" href="">
+                                            <svg class="svg-facebook" width="20px" height="20px">
+                                                <use href="./imeges/hw-04/icons.svg#facebook3"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="network-employee">
+                                        <a class="linkedin" href="">
+                                            <svg class="svg-linkedin" width="20px" height="20px">
+                                                <use href="./imeges/hw-04/icons.svg#linkedin4"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li class="michael box"><img src="./imeges/Наша-команда/img-4.jpg" alt="img-3.jpg" width="270" height="260">
                         <div class="employee-and-position">
                             <h3 class="name">Михаил Ермаков</h3>
                             <p class="position">UI Designer</p>
-                            <!-- <ul class="network">
-                                <li></li>
-                                <li></li>
-                            </ul> -->
+                            <div class="div-network">
+                                <ul class="network box">
+                                    <li class="network-employee">
+                                        <a class="instagram" href="">
+                                            <svg class="svg-instagram" width="20px" height="20px">
+                                                <use href="./imeges/hw-04/icons.svg#instagram1"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="network-employee">
+                                        <a class="rgba(255, 255, 255, 0.1);" href="">
+                                            <svg class="svg-twitter" width="20px" height="20px">
+                                                <use href="./imeges/hw-04/icons.svg#twitter2"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="network-employee">
+                                        <a class="facebook" href="">
+                                            <svg class="svg-facebook" width="20px" height="20px">
+                                                <use href="./imeges/hw-04/icons.svg#facebook3"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="network-employee">
+                                        <a class="linkedin" href="">
+                                            <svg class="svg-linkedin" width="20px" height="20px">
+                                                <use href="./imeges/hw-04/icons.svg#linkedin4"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <a href="./index.html" class="logo-footer box"><span class="blue">Web</span><span class="white">Studio</span></a>
-            <address class="address">
-                <ul class="lists-d">
-                    <li class="item"><a href="https://goo.gl/maps/WVhNWYt22gfoeqNc8" target="_blank" rel="noopener nofollow noreferrer"
-                            class="liaddress box">г. Киев, пр-т Леси Украинки, 26</a></li>
-                    <li class="item"><a href="mailto:info@devstudio.com" class="limail box">info@devstudio.com</a></li>
-                    <li class="item"><a href="tel:+380961111111" class="litel box">+38 096 111 11 11</a></li>
+        <section class="customers">
+            <div class="container">
+                <h2 class="title-customers">Постоянные клиенты</h2>
+                <ul class="lists-e">
+                    <li>
+                       <div class="div-group1 box">
+                        <a class="group1" href="">
+                            <svg class="svg-group1" width="41px" height="47px">
+                                <use href="./imeges/hw-04/icons.svg#group1"></use>
+                            </svg>
+                        </a>
+                       </div>
+                    </li>
+                    <li>
+                      <div class="div-group2 box">
+                        <a class="group2" href="">
+                            <svg class="svg-group2" width="40px" height="52px">
+                                <use href="./imeges/hw-04/icons.svg#group2"></use>
+                            </svg>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                       <div class="div-group3 box">
+                            <a class="group3" href="">
+                                <svg class="svg-group3" width="43px" height="41px">
+                                    <use href="./imeges/hw-04/icons.svg#group3"></use>
+                                </svg>
+                            </a>
+                       </div>
+                    </li>
+                    <li>
+                      <div class="div-group4 box">
+                        <a class="group4" href="">
+                            <svg class="svg-group4" width="84px" height="41px">
+                                <use href="./imeges/hw-04/icons.svg#group4"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    </li>
+                    <li>
+                      <div class="div-group5 box">
+                        <a class="group5" href="">
+                            <svg class="svg-group5" width="63px" height="45px">
+                                <use href="./imeges/hw-04/icons.svg#group5"></use>
+                            </svg>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                       <div class="div-group6 box">
+                        <a class="group6" href="">
+                            <svg class="svg-group6" width="94px" height="44px">
+                                <use href="./imeges/hw-04/icons.svg#group6"></use>
+                            </svg>
+                        </a>
+                      </div>
+                    </li>
                 </ul>
-            </address>
+
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container end">
+            <div class="fist-footer-div">
+                <a href="./index.html" class="logo-footer box"><span class="blue">Web</span><span class="white">Studio</span></a>
+                <address class="address">
+                    <ul class="lists-d">
+                        <li class="item"><a href="https://goo.gl/maps/WVhNWYt22gfoeqNc8" target="_blank"
+                                rel="noopener nofollow noreferrer" class="liaddress box">г. Киев, пр-т Леси Украинки, 26</a></li>
+                        <li class="item"><a href="mailto:info@devstudio.com" class="limail box">info@devstudio.com</a></li>
+                        <li class="item"><a href="tel:+380961111111" class="litel box">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+
+            <div class="second-footer-div box" width="206px" height="80px">
+                <h3 class="footer-title">ПРИСОЕДИНЯЙТЕСЬ</h3>
+                <ul class="lists-f">
+                    <li class="fsocial-list">
+                        <a class="fsocial-link" href="">
+                            <svg class="instagram-white" width="20px" height="20px">
+                                <use href="./imeges/hw-04/icons.svg#instagram-white"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="fsocial-list">
+                        <a class="fsocial-link" href="">
+                            <svg class="twitter-white" width="20px" height="20px">
+                                <use href="./imeges/hw-04/icons.svg#twitter-white"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="fsocial-list">
+                        <a class="fsocial-link" href="">
+                            <svg class="facebook-white" width="20px" height="20px">
+                                <use href="./imeges/hw-04/icons.svg#facebook-white"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="fsocial-list">
+                        <a class="fsocial-link" href="">
+                            <svg class="linkedin-white" width="20px" height="20px">
+                                <use href="./imeges/hw-04/icons.svg#linkedin-white"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
