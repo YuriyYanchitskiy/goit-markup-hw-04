@@ -41,7 +41,7 @@ body{
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid cyan;
+    /* outline: 2px solid cyan; */
 }
  
 /* Логотип хедера */
@@ -164,10 +164,12 @@ ul.list{
 .contacts:hover{
     color: var(--accent-color1);
 }
+.adressli{
+    position:relative;
+}
 
-
-.mail,
-.tel{
+.adressli .mail,
+.adressli .tel{
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -175,16 +177,17 @@ ul.list{
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-decoration: none;
-    display: inline-block;
     color: var(--primary-text-color);
     
 }
 
-.icon-tel,
-.icon-mail{
-    vertical-align: middle;
+.icon-mail,
+.icon-tel{
+    vertical-align:middle;
     fill: currentColor;
+    margin-right: 10px;
 }
+
 
 .mail:hover,
 .tel:hover{
@@ -193,26 +196,21 @@ ul.list{
 
 .mail:hover .icon-mail,
 .tel:hover .icon-tel{
-    fill: var(--blue-background);
-    
+    fill: var(--blue-background);   
+}
+.mail:focus,
+.tel:focus {
+    color: #2196F3;
 }
 
+.mail:focus .icon-mail,
+.tel:focus .icon-tel {
+    fill: var(--blue-background);
+}
 
-
-
-/* .icon-mail::before{
-    display: inline-block;
-    content: '';
-    margin-right: 10px;
-} */
 .list-adress{
     align-items: center;
 }
-/* .icon-tel::before {
-    display: inline-block;
-    content: '';
-    margin-right: 10px;  
-} */
 
 /*main*/
 .background-hero {
@@ -227,7 +225,6 @@ ul.list{
 
 .hero{
     text-align: center;
-    /* background: var(--background); */
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient();
@@ -449,11 +446,17 @@ ul.list{
     align-items: center;
     justify-content: center;
     margin-top: 16px;
-}
-.network-employee{
-    display: flex;
     
 }
+
+.network-employee{
+    display: flex;  
+}
+.network-employee:not(:last-child) {
+    margin-right: 10px;
+}
+
+
 .instagram,
 .twitter,
 .facebook,
@@ -468,7 +471,6 @@ ul.list{
     display: flex;
     justify-content: center;
     align-items: center;
-      
 }
 
 .svg-instagram,
@@ -485,11 +487,23 @@ ul.list{
 .linkedin:hover{
     background-color: var(--blue-background);
 }
+.instagram:focus,
+.twitter:focus,
+.facebook:focus,
+.linkedin:focus {
+    background-color: var(--blue-background);
+}
 
 .instagram:hover .svg-instagram,
 .twitter:hover .svg-twitter,
 .facebook:hover .svg-facebook,
 .linkedin:hover .svg-linkedin {
+    fill: #FFFFFF;
+}
+.instagram:focus .svg-instagram,
+.twitter:focus .svg-twitter,
+.facebook:focus .svg-facebook,
+.linkedin:focus .svg-linkedin {
     fill: #FFFFFF;
 }
 
@@ -508,12 +522,12 @@ ul.list{
     margin-top: 0px;
     margin-bottom: 50px;
 }
-.div-group1,
-.div-group2,
-.div-group3,
-.div-group4,
-.div-group5,
-.div-group6{
+.group1,
+.group2,
+.group3,
+.group4,
+.group5,
+.group6{
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
@@ -522,37 +536,45 @@ ul.list{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-}
-.group1,
-.group2,
-.group3,
-.group4,
-.group5,
-.group6{
-    display: inline-block;
     padding: 0;
-    border: none;
     fill: var(--color-icon);
 }
 
-.div-group1:hover .svg-group1,
-.div-group2:hover .svg-group2,
-.div-group3:hover .svg-group3,
-.div-group4:hover .svg-group4,
-.div-group5:hover .svg-group5,
-.div-group6:hover .svg-group6{
+.group1:hover .svg-group1,
+.group2:hover .svg-group2,
+.group3:hover .svg-group3,
+.group4:hover .svg-group4,
+.group5:hover .svg-group5,
+.group6:hover .svg-group6{
     fill: var(--blue-background);
     
 }
-.div-group1:hover,
-.div-group2:hover,
-.div-group3:hover,
-.div-group4:hover,
-.div-group5:hover,
-.div-group6:hover{
+.group1:hover,
+.group2:hover,
+.group3:hover,
+.group4:hover,
+.group5:hover,
+.group6:hover{
     border: 1px solid var(--blue-background);
 }
+.group1:focus .svg-group1,
+.group2:focus .svg-group2,
+.group3:focus .svg-group3,
+.group4:focus .svg-group4,
+.group5:focus .svg-group5,
+.group6:focus .svg-group6 {
+    fill: var(--blue-background);
 
+}
+
+.group1:focus,
+.group2:focus,
+.group3:focus,
+.group4:focus,
+.group5:focus,
+.group6:focus {
+    border: 1px solid var(--blue-background);
+}
 
 .lists-b{
     margin-top: 0px;
@@ -566,7 +588,6 @@ ul.list{
     margin-right: auto;
     padding-top: 60px;
     padding-bottom: 60px;
-  
 }
 
 .logo-footer{
@@ -601,8 +622,8 @@ ul.list{
     letter-spacing: 0.03em;
     text-decoration: none;
     color: var(--accent-color2);
-    
 }
+
 .liaddress:hover,
 .liaddress:focus,
 .limail:hover,
@@ -659,7 +680,6 @@ ul.list{
     line-height: 18.4px;
     tab-size: 4;
     text-size-adjust: 100%
-
 }
 .container.end{
    display: flex; 
@@ -674,6 +694,7 @@ ul.list{
     color: var(--accent-color2);
     margin-bottom: 20px;
 }
+
 .fsocial-link{
     display: flex;
     justify-content: center;
@@ -682,19 +703,23 @@ ul.list{
     height: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
-    
 }
+
 .instagram-white,
 .twitter-white,
 .facebook-white,
 .linkedin-white{
     fill: var(--accent-color2);
 }
+
 .fsocial-list:not(:last-child) {
     margin-right: 10px;
 }
 
 .fsocial-link:hover{
+    background-color: var(--blue-background);
+}
+.fsocial-link:focus {
     background-color: var(--blue-background);
 }
 
@@ -769,6 +794,7 @@ ul.list{
     text-decoration: none;
     border-radius: 4px;
 }
+
 .button-all:hover,
 .button-all:focus,
 .button-web:hover,
@@ -796,6 +822,7 @@ ul.list{
     background: var(--background-color);
     border: 1px solid #EEEEEE;
 }
+
 .techno-title,
 .poster-title,
 .seafood-title,
@@ -814,6 +841,7 @@ ul.list{
     padding-left: 24px;
     padding-right: 24px;
 }
+
 .techno-text,
 .poster-text,
 .seafood-text,
@@ -836,11 +864,16 @@ ul.list{
 .text-icon{
     padding-top: 20px;
     padding-bottom: 20px;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
 }
+
 /* ширина ліжок */
 .element .box{
     width: 370px;
 }
+
 .a-сard{
     text-decoration:none
 }
@@ -862,7 +895,6 @@ ul.list{
 .element {
     flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
     margin: calc(var(--indent) / 2);
-    
 }
 .element.box:hover{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
