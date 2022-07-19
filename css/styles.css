@@ -18,6 +18,7 @@
     --items: 3;/* кількість карток в рядку */
     --indent: 30px;/* відступи між картками */
     --color-icon: #AFB1B8;
+    --primary-bg-color: #E5E5E5;
 }
 /*основний колір фону #FFFFFF*/
 /*другорядний колір фону #F5F4FA*/
@@ -147,6 +148,8 @@ ul.list{
     color: var(--title-text-color);
     text-decoration: none;
     display: inline-block;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list .studio.current,
 .list .portfolio.current{
@@ -292,6 +295,9 @@ ul.list{
     padding: 10px 32px;
     text-decoration: none;
     border-radius: 4px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .box.plate::before {
     content: '';
@@ -355,7 +361,7 @@ ul.list{
     background: rgba(47, 48, 58, 0.8);
 }
 
-.doing .title-doing{
+.doing .title-doing-icon{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -525,6 +531,9 @@ ul.list{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg-instagram,
@@ -592,6 +601,9 @@ ul.list{
     cursor: pointer;
     padding: 0;
     fill: var(--color-icon);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .group1:hover .svg-group1,
@@ -603,6 +615,8 @@ ul.list{
     fill: var(--blue-background);
     
 }
+
+
 .group1:hover,
 .group2:hover,
 .group3:hover,
@@ -730,6 +744,7 @@ ul.list{
 
 .second-footer-div{
     margin-left: 70px;
+    margin-right: 93px;
     padding-top: 15px;
     line-height: 18.4px;
     tab-size: 4;
@@ -757,6 +772,8 @@ ul.list{
     height: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .instagram-white,
@@ -776,6 +793,63 @@ ul.list{
 .fsocial-link:focus {
     background-color: var(--blue-background);
 }
+
+/* Підпишіться */
+.footer-sign{
+    width: 570px;
+    height: 86px;
+    padding-top: 15px;
+}
+.sign-text{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--accent-color2);
+}
+.form-sign{
+    display: flex;
+}
+.lable-sign {
+    display: flex;
+}
+.input-sign{
+    width: 358px;
+    font-family: inherit;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    background-color: var(--background);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+.button-sign{
+    min-width: 200px;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--accent-color2);
+    background: var(--blue-background);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    border-color: transparent;
+}
+.send {
+    margin-left: 10px;
+}
+
 
 /*////////////////////////////////////////*/
 
@@ -847,6 +921,9 @@ ul.list{
     padding: 6px 22px;
     text-decoration: none;
     border-radius: 4px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-all:hover,
@@ -866,6 +943,7 @@ ul.list{
 
 .icon>.a-сard {
     color: inherit;
+    
 }
 /*  */
 /* .div-doing {
@@ -905,6 +983,8 @@ ul.list{
 }
 .surfacing .img{
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .surfacing::before{
@@ -922,21 +1002,21 @@ ul.list{
 /*  */
 .surfacing-text{
     position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        padding: 63px 24px;
-        background-color: rgba(33, 150, 243, 0.9);
-        transform: translateY(100%);
-        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 63px 24px;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
+
 
 .surfacing .surfacing-text-icon{
     display: inline-block;
     margin: 0;
-    /* font-family: 'Roboto';
-    font-style: normal; */
     font-weight: 400;
     font-size: 18px;
     line-height: 1.55;

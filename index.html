@@ -82,15 +82,15 @@
                 <ul class="lists-b">
                     <div class="div-doing">
                        <li><img src="./imeges/Чем-мы-занимаемся/img-1.jpg" class="img1 box" alt="img-1.jpg" width="370" height="294"></li>
-                       <p class="title-doing">Десктопные приложения</p>
+                       <p class="title-doing-icon">Десктопные приложения</p>
                     </div>
                     <div class="div-doing">
                        <li><img src="./imeges/Чем-мы-занимаемся/img-2.jpg" class="img2 box" alt="img-2.jpg" width="370" height="294"></li>
-                       <p class="title-doing">Мобильные приложения</p>
+                       <p class="title-doing-icon">Мобильные приложения</p>
                     </div>
                     <div class="div-doing">
                        <li><img src="./imeges/Чем-мы-занимаемся/img-3.jpg" class="img3 box" alt="img-3.jpg" width="370" height="294"></li>
-                       <p class="title-doing">Дизайнерские решения</p>
+                       <p class="title-doing-icon">Дизайнерские решения</p>
                 </div>
                     
                 </ul>
@@ -354,7 +354,58 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-sign">
+                <p class="sign-text">Подпишитесь на рассылку</p>
+                <form class="form-sign" autocomplete="off" novalidate>
+                    <label class="lable-sign">
+                        <input class="input-sign" type="email" name="email" placeholder="E-mail">
+                    </label>
+                    <button class="button-sign" type="submit"> Подписаться
+                        <svg class="send" width="24px" height="24px">
+                            <use href="./imeges/hw-04/icons.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+    	// ]]>
+    </script>
 </body>
 </html>
